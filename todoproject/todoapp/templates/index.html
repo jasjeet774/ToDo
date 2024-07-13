@@ -7,6 +7,7 @@
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <h1 class="text-2xl font-bold mb-4 text-center">To-Do List</h1>
+        <h1  class="text-2xl font-bold mb-4 text-center">Welcome, {{ request.user.username }}</h1>
         <form method="POST" class="mb-4">
             {% csrf_token %}
             <div class="space-y-4">
